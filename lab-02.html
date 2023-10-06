@@ -366,23 +366,37 @@ library(readxl)</code></pre>
 <div id="load-join-data-sets" class="section level2">
 <h2>Load &amp; join data sets</h2>
 <pre class="r"><code># Member 1 write code to load File 1 data here:
-Plastic &lt;- read.csv(&quot;data/mismanaged-plastic-waste-per-capita.csv&quot;)
 
+Plastic &lt;- read.csv(&quot;data/mismanaged-plastic-waste-per-capita.csv&quot;)
 
 # Member 2 write code to load File 2 data here:
 
-
+Plastic_2 &lt;- read.csv2(&quot;data/per-capita-ocean-plastic-waste.txt&quot;)
 
 # Member 3 write code to load File 3 data here:
 
+UN_country_population &lt;- read_tsv(&quot;data/UN_country_population.tsv&quot;)
 
+# Member 4 write code to load File 4 data here:
 
-# Member 4 write code to load File 4 data here:</code></pre>
+library(readxl)
+UN_country_region &lt;- read_excel(&quot;data/UN_country_region.xlsx&quot;)</code></pre>
 <pre class="r"><code># Member 1 write code to create object &#39;plastic_data_all&#39;:
 
-
-
-# Member 2 write code to join your data to &#39;plastic_data_all&#39;:
+plastic_data_all &lt;- Plastic
+plastic_data_all %&gt;% head(n=10)</code></pre>
+<pre><code>##                   name code mismanaged_plastic
+## 1              Albania  ALB         24.2391531
+## 2              Algeria  DZA         17.7589947
+## 3               Angola  AGO          7.4452789
+## 4  Antigua and Barbuda  ATG          6.4639175
+## 5            Argentina  ARG         10.4019115
+## 6            Australia  AUS          0.2089434
+## 7              Bahamas  BHS          5.6863753
+## 8              Bahrain  BHR          0.6355881
+## 9           Bangladesh  BGD          6.2681084
+## 10            Barbados  BRB          3.0383275</code></pre>
+<pre class="r"><code># Member 2 write code to join your data to &#39;plastic_data_all&#39;:
 
 
 
