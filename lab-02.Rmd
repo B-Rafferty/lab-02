@@ -22,15 +22,16 @@ Plastic <- read.csv("data/mismanaged-plastic-waste-per-capita.csv")
 
 # Member 2 write code to load File 2 data here:
 
-Plastic_2 <- read.csv("per-capicta-ocean-plastic-waste.txt")
+Plastic_2 <- read.csv2("data/per-capita-ocean-plastic-waste.txt")
 
 # Member 3 write code to load File 3 data here:
 
-
+UN_country_population <- read_tsv("data/UN_country_population.tsv")
 
 # Member 4 write code to load File 4 data here:
 
-
+library(readxl)
+UN_country_region <- read_excel("data/UN_country_region.xlsx")
 
 ```
 
